@@ -154,6 +154,16 @@
   --color-black: #000;
   --color-white: #fff;
   --color-transparent: transparent;
+  --color-orange-50: #fff7ed;
+  --color-orange-100: #ffedd5;
+  --color-orange-200: #fed7aa;
+  --color-orange-300: #fdba74;
+  --color-orange-400: #fb923c;
+  --color-orange-500: #f97316;
+  --color-orange-600: #ea580c;
+  --color-orange-700: #c2410c;
+  --color-orange-800: #9a3412;
+  --color-orange-900: #7c2d12;
 }
 [theme="dark"] {
   --background: #18181b;
@@ -298,6 +308,16 @@
   --color-black: #fff;
   --color-white: #18181b;
   --color-transparent: transparent;
+  --color-orange-50: #2d1607;
+  --color-orange-100: #3a1d0a;
+  --color-orange-200: #4a260e;
+  --color-orange-300: #5c3012;
+  --color-orange-400: #7c2d12;
+  --color-orange-500: #ea580c;
+  --color-orange-600: #fb923c;
+  --color-orange-700: #fdba74;
+  --color-orange-800: #fed7aa;
+  --color-orange-900: #ffedd5;
 }
 [theme="pro"] {
   --background: #fff;
@@ -599,6 +619,16 @@
   --color-gray-700: #a5b4fc;
   --color-gray-800: #a5b4fc;
   --color-gray-900: #a5b4fc;
+  --color-orange-50: #fff7ed;
+  --color-orange-100: #ffedd5;
+  --color-orange-200: #fed7aa;
+  --color-orange-300: #fdba74;
+  --color-orange-400: #fb923c;
+  --color-orange-500: #f97316;
+  --color-orange-600: #ea580c;
+  --color-orange-700: #c2410c;
+  --color-orange-800: #9a3412;
+  --color-orange-900: #7c2d12;
 }
 [theme="forest"] {
   --background: #f0fdf4;
@@ -740,6 +770,16 @@
   --color-gray-700: #166534;
   --color-gray-800: #14532d;
   --color-gray-900: #052e16;
+  --color-orange-50: #2d1607;
+  --color-orange-100: #3a1d0a;
+  --color-orange-200: #4a260e;
+  --color-orange-300: #5c3012;
+  --color-orange-400: #7c2d12;
+  --color-orange-500: #ea580c;
+  --color-orange-600: #fb923c;
+  --color-orange-700: #fdba74;
+  --color-orange-800: #fed7aa;
+  --color-orange-900: #ffedd5;
 }
 [theme="sea"] {
   --background: #e0f2fe;
@@ -896,6 +936,16 @@
   --color-gray-700: #0ea5e9;
   --color-gray-800: #0ea5e9;
   --color-gray-900: #0c4a6e;
+  --color-orange-50: #2d1607;
+  --color-orange-100: #3a1d0a;
+  --color-orange-200: #4a260e;
+  --color-orange-300: #5c3012;
+  --color-orange-400: #7c2d12;
+  --color-orange-500: #ea580c;
+  --color-orange-600: #fb923c;
+  --color-orange-700: #fdba74;
+  --color-orange-800: #fed7aa;
+  --color-orange-900: #ffedd5;
 }
 [theme="summer"] {
   --background: #fff7ed;
@@ -1052,6 +1102,16 @@
   --color-gray-700: #f59e42;
   --color-gray-800: #f59e42;
   --color-gray-900: #78350f;
+  --color-orange-50: #fff7ed;
+  --color-orange-100: #ffedd5;
+  --color-orange-200: #fed7aa;
+  --color-orange-300: #fdba74;
+  --color-orange-400: #fb923c;
+  --color-orange-500: #f97316;
+  --color-orange-600: #ea580c;
+  --color-orange-700: #c2410c;
+  --color-orange-800: #9a3412;
+  --color-orange-900: #7c2d12;
 }
 [theme="2d"] {
   --background: #f1f5f9;
@@ -1208,6 +1268,16 @@
   --color-gray-700: #f43f5e;
   --color-gray-800: #f43f5e;
   --color-gray-900: #be123c;
+  --color-orange-50: #2d1607;
+  --color-orange-100: #3a1d0a;
+  --color-orange-200: #4a260e;
+  --color-orange-300: #5c3012;
+  --color-orange-400: #7c2d12;
+  --color-orange-500: #ea580c;
+  --color-orange-600: #fb923c;
+  --color-orange-700: #fdba74;
+  --color-orange-800: #fed7aa;
+  --color-orange-900: #ffedd5;
 }
 
 html, body {
@@ -1387,5 +1457,48 @@ html, body {
   --color-gray-700: #166534;
   --color-gray-800: #14532d;
   --color-gray-900: #052e16;
+  --color-orange-50: #2d1607;
+  --color-orange-100: #3a1d0a;
+  --color-orange-200: #4a260e;
+  --color-orange-300: #5c3012;
+  --color-orange-400: #7c2d12;
+  --color-orange-500: #ea580c;
+  --color-orange-600: #fb923c;
+  --color-orange-700: #fdba74;
+  --color-orange-800: #fed7aa;
+  --color-orange-900: #ffedd5;
 }
 /* Répéter pour chaque thème avec la gamme adaptée (bleu pour sea, orange pour summer, rouge pour 2d, pastel pour glass, etc.) */
+
+/* Surcharges pour toutes les couleurs secondaires Tailwind */
+/* Exemple pour orange, à dupliquer pour chaque couleur secondaire */
+.text-orange-50 { color: var(--color-orange-50) !important; }
+.text-orange-100 { color: var(--color-orange-100) !important; }
+.text-orange-200 { color: var(--color-orange-200) !important; }
+.text-orange-300 { color: var(--color-orange-300) !important; }
+.text-orange-400 { color: var(--color-orange-400) !important; }
+.text-orange-500 { color: var(--color-orange-500) !important; }
+.text-orange-600 { color: var(--color-orange-600) !important; }
+.text-orange-700 { color: var(--color-orange-700) !important; }
+.text-orange-800 { color: var(--color-orange-800) !important; }
+.text-orange-900 { color: var(--color-orange-900) !important; }
+.bg-orange-50 { background: var(--color-orange-50) !important; }
+.bg-orange-100 { background: var(--color-orange-100) !important; }
+.bg-orange-200 { background: var(--color-orange-200) !important; }
+.bg-orange-300 { background: var(--color-orange-300) !important; }
+.bg-orange-400 { background: var(--color-orange-400) !important; }
+.bg-orange-500 { background: var(--color-orange-500) !important; }
+.bg-orange-600 { background: var(--color-orange-600) !important; }
+.bg-orange-700 { background: var(--color-orange-700) !important; }
+.bg-orange-800 { background: var(--color-orange-800) !important; }
+.bg-orange-900 { background: var(--color-orange-900) !important; }
+.border-orange-500 { border-color: var(--color-orange-500) !important; }
+.ring-orange-500 { --tw-ring-color: var(--color-orange-500) !important; }
+.outline-orange-500 { outline-color: var(--color-orange-500) !important; }
+.placeholder-orange-500::placeholder { color: var(--color-orange-500) !important; }
+.divide-orange-500 > :not([hidden]) ~ :not([hidden]) { border-color: var(--color-orange-500) !important; }
+.from-orange-500 { --tw-gradient-from: var(--color-orange-500) !important; }
+.to-orange-500 { --tw-gradient-to: var(--color-orange-500) !important; }
+.via-orange-500 { --tw-gradient-stops: var(--color-orange-500), var(--color-orange-500), var(--color-orange-500) !important; }
+.shadow-orange-500 { box-shadow: 0 1px 2px 0 var(--color-orange-500) !important; }
+/* Répéter pour pink, purple, indigo, teal, cyan, lime, amber, emerald, fuchsia, violet, sky, slate, stone, neutral, zinc, etc. */
