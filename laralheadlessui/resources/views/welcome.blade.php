@@ -462,13 +462,23 @@
             <div class="bg-white rounded-lg shadow border border-gray-100 p-6 flex flex-col md:flex-row md:items-start md:gap-8 transition hover:shadow-md">
                 <div class="flex-1 mb-4 md:mb-0">
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Avatar</h3>
-                    <div class="py-8 px-6 bg-gray-50 rounded flex items-center justify-center min-h-[120px] max-w-full overflow-x-auto" style="min-width:0;">
-                        <x-avatar>JD</x-avatar>
+                    <div class="space-y-4">
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-avatar>JD</x-avatar>
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-avatar size="sm">SM</x-avatar>
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-avatar size="lg">LG</x-avatar>
+                        </div>
                     </div>
                 </div>
                 <div class="w-full md:w-1/2 mt-4 md:mt-0 flex flex-col gap-2">
                     <div class="bg-gray-900 text-gray-100 rounded p-4 text-xs font-mono overflow-x-auto mb-2">
-                        <pre class="whitespace-pre-wrap break-words"><code>&lt;x-avatar&gt;JD&lt;/x-avatar&gt;</code></pre>
+                        <pre class="whitespace-pre-wrap break-words"><code>&lt;x-avatar&gt;JD&lt;/x-avatar&gt;
+&lt;x-avatar size="sm"&gt;SM&lt;/x-avatar&gt;
+&lt;x-avatar size="lg"&gt;LG&lt;/x-avatar&gt;</code></pre>
                     </div>
                     <div class="bg-gray-50 rounded p-3 text-xs">
                         <div class="font-semibold mb-1">Paramètres :</div>
