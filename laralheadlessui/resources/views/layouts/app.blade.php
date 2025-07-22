@@ -28,7 +28,7 @@
         <a href="#install" class="inline-block bg-blue-600 text-white px-6 py-2 rounded shadow hover:bg-blue-700 transition">Installer maintenant</a>
     </section>
     <!-- Main Content -->
-    <main class="flex-1 w-full max-w-4xl mx-auto py-10 px-4">
+    <main class="flex-1 w-full max-w-7xl mx-auto py-10 px-4">
         @yield('content')
     </main>
     <!-- Footer -->

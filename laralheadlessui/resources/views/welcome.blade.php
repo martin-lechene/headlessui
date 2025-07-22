@@ -1,6 +1,30 @@
 @extends('layouts.app')
 
 @section('content')
+    <style>
+        [theme="pro"] { --tw-bg-opacity: 1; background-color: #f8fafc; color: #1e293b; }
+        [theme="light"] { background-color: #fff; color: #111827; }
+        [theme="dark"] { background-color: #18181b; color: #f3f4f6; }
+        [theme="glass"] { background: rgba(255,255,255,0.6); color: #374151; backdrop-filter: blur(8px); }
+        [theme="forest"] { background-color: #f0fdf4; color: #14532d; }
+        [theme="sea"] { background-color: #e0f2fe; color: #0c4a6e; }
+        [theme="summer"] { background-color: #fff7ed; color: #78350f; }
+        [theme="2d"] { background-color: #f1f5f9; color: #0f172a; }
+        html[theme] { transition: background 0.3s, color 0.3s; }
+    </style>
+    <div class="flex justify-end mb-4">
+        <label for="theme-select" class="mr-2 font-semibold text-gray-700">Thème :</label>
+        <select id="theme-select" class="border rounded px-2 py-1">
+            <option value="pro">Pro (FrappeUI)</option>
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+            <option value="glass">Glass</option>
+            <option value="forest">Forest</option>
+            <option value="sea">Sea</option>
+            <option value="summer">Summer</option>
+            <option value="2d">2D</option>
+        </select>
+    </div>
     <section id="components" class="mb-16">
         <h2 class="text-2xl font-bold mb-8 text-blue-700">Composants UI</h2>
         <div class="space-y-10">
@@ -8,13 +32,55 @@
             <div class="bg-white rounded-lg shadow border border-gray-100 p-6 flex flex-col md:flex-row md:items-start md:gap-8 transition hover:shadow-md">
                 <div class="flex-1 mb-4 md:mb-0">
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Button</h3>
-                    <div class="py-8 px-6 bg-gray-50 rounded flex items-center justify-center min-h-[120px] max-w-full overflow-x-auto" style="min-width:0;">
-                        <x-button color="primary" size="md" icon="<svg class='w-4 h-4' fill='none' stroke='currentColor' stroke-width='2' viewBox='0 0 24 24'><path stroke-linecap='round' stroke-linejoin='round' d='M5 13l4 4L19 7'></path></svg>">Valider</x-button>
+                    <div class="space-y-4">
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-button>Défaut</x-button>
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-button color="secondary">Secondaire</x-button>
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-button color="danger">Danger</x-button>
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-button size="sm">Petit</x-button>
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-button size="lg">Grand</x-button>
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-button icon="<svg class='w-4 h-4' fill='none' stroke='currentColor' stroke-width='2' viewBox='0 0 24 24'><path stroke-linecap='round' stroke-linejoin='round' d='M5 13l4 4L19 7'></path></svg>">Avec icône</x-button>
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-button loading>Chargement</x-button>
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-button disabled>Désactivé</x-button>
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-button outline>Outline</x-button>
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-button block>Block</x-button>
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-button type="submit">Type submit</x-button>
+                        </div>
                     </div>
                 </div>
                 <div class="w-full md:w-1/2 mt-4 md:mt-0 flex flex-col gap-2">
                     <div class="bg-gray-900 text-gray-100 rounded p-4 text-xs font-mono overflow-x-auto mb-2">
-                        <pre class="whitespace-pre-wrap break-words"><code>&lt;x-button color="primary" size="md" icon="..."&gt;Valider&lt;/x-button&gt;</code></pre>
+                        <pre class="whitespace-pre-wrap break-words"><code>&lt;x-button&gt;Défaut&lt;/x-button&gt;
+&lt;x-button color=&quot;secondary&quot;&gt;Secondaire&lt;/x-button&gt;
+&lt;x-button color=&quot;danger&quot;&gt;Danger&lt;/x-button&gt;
+&lt;x-button size=&quot;sm&quot;&gt;Petit&lt;/x-button&gt;
+&lt;x-button size=&quot;lg&quot;&gt;Grand&lt;/x-button&gt;
+&lt;x-button icon=&quot;...svg...&quot;&gt;Avec icône&lt;/x-button&gt;
+&lt;x-button loading&gt;Chargement&lt;/x-button&gt;
+&lt;x-button disabled&gt;Désactivé&lt;/x-button&gt;
+&lt;x-button outline&gt;Outline&lt;/x-button&gt;
+&lt;x-button block&gt;Block&lt;/x-button&gt;
+&lt;x-button type=&quot;submit&quot;&gt;Type submit&lt;/x-button&gt;</code></pre>
                     </div>
                     <div class="bg-gray-50 rounded p-3 text-xs">
                         <div class="font-semibold mb-1">Paramètres :</div>
@@ -36,13 +102,63 @@
             <div class="bg-white rounded-lg shadow border border-gray-100 p-6 flex flex-col md:flex-row md:items-start md:gap-8 transition hover:shadow-md">
                 <div class="flex-1 mb-4 md:mb-0">
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Input</h3>
-                    <div class="py-8 px-6 bg-gray-50 rounded flex items-center justify-center min-h-[120px] max-w-full overflow-x-auto" style="min-width:0;">
-                        <x-input label="Email" placeholder="Votre email" value="test@example.com" clearable helpText="Votre adresse email professionnelle" />
+                    <div class="space-y-4">
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-input placeholder="Votre email" />
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-input type="password" label="Mot de passe" placeholder="••••••" />
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-input label="Nom" value="Martin" />
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-input label="Email" value="test@example.com" clearable helpText="Votre adresse email professionnelle" />
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-input label="Désactivé" disabled value="Disabled" />
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-input label="Lecture seule" readonly value="Readonly" />
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-input label="Erreur" error="Champ obligatoire" />
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-input label="Préfixe" prefix="@" placeholder="username" />
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-input label="Suffixe" suffix=".com" placeholder="domaine" />
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-input label="Autofocus" autofocus />
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-input label="Maxlength" maxlength="8" value="Limité" />
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-input label="Minlength" minlength="4" />
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-input type="number" label="Step" step="2" min="0" max="10" value="4" />
+                        </div>
                     </div>
                 </div>
                 <div class="w-full md:w-1/2 mt-4 md:mt-0 flex flex-col gap-2">
                     <div class="bg-gray-900 text-gray-100 rounded p-4 text-xs font-mono overflow-x-auto mb-2">
-                        <pre class="whitespace-pre-wrap break-words"><code>&lt;x-input label="Email" placeholder="Votre email" value="test@example.com" clearable helpText="Votre adresse email professionnelle" /&gt;</code></pre>
+                        <pre class="whitespace-pre-wrap break-words"><code>&lt;x-input placeholder=&quot;Votre email&quot; /&gt;
+&lt;x-input type=&quot;password&quot; label=&quot;Mot de passe&quot; placeholder=&quot;••••••&quot; /&gt;
+&lt;x-input label=&quot;Nom&quot; value=&quot;Martin&quot; /&gt;
+&lt;x-input label=&quot;Email&quot; value=&quot;test@example.com&quot; clearable helpText=&quot;Votre adresse email professionnelle&quot; /&gt;
+&lt;x-input label=&quot;Désactivé&quot; disabled value=&quot;Disabled&quot; /&gt;
+&lt;x-input label=&quot;Lecture seule&quot; readonly value=&quot;Readonly&quot; /&gt;
+&lt;x-input label=&quot;Erreur&quot; error=&quot;Champ obligatoire&quot; /&gt;
+&lt;x-input label=&quot;Préfixe&quot; prefix=&quot;@&quot; placeholder=&quot;username&quot; /&gt;
+&lt;x-input label=&quot;Suffixe&quot; suffix=&quot;.com&quot; placeholder=&quot;domaine&quot; /&gt;
+&lt;x-input label=&quot;Autofocus&quot; autofocus /&gt;
+&lt;x-input label=&quot;Maxlength&quot; maxlength=&quot;8&quot; value=&quot;Limité&quot; /&gt;
+&lt;x-input label=&quot;Minlength&quot; minlength=&quot;4&quot; /&gt;
+&lt;x-input type=&quot;number&quot; label=&quot;Step&quot; step=&quot;2&quot; min=&quot;0&quot; max=&quot;10&quot; value=&quot;4&quot; /&gt;</code></pre>
                     </div>
                     <div class="bg-gray-50 rounded p-3 text-xs">
                         <div class="font-semibold mb-1">Paramètres :</div>
@@ -918,7 +1034,7 @@
                         <ul class="list-disc pl-4">
                             <li><b>type</b> (string, optionnel) : Type de graphique (bar, line, pie, donut, radar, polar, scatter, bubble, heatmap, treemap, funnel, waterfall, candlestick, boxplot, violin, density, histogram, pie-doughnut, radar-polar, scatter-bubble, heatmap-treemap, funnel-waterfall, candlestick-boxplot, violin-density, histogram-pie-doughnut, radar-polar-scatter-bubble, heatmap-treemap-funnel-waterfall, candlestick-boxplot-violin-density, histogram-pie-doughnut-radar-polar-scatter-bubble, heatmap-treemap-funnel-waterfall-candlestick-boxplot-violin-density)</li>
                             <li><b>options</b> (object, optionnel) : Options de configuration du graphique</li>
-                        </ul>
+                    </ul>
                     </div>
                 </div>
             </div>
@@ -942,7 +1058,7 @@
                             <li><b>disabledDates</b> (array, optionnel) : Dates désactivées</li>
                             <li><b>highlightedDates</b> (array, optionnel) : Dates mises en évidence</li>
                             <li><b>onChange</b> (function, optionnel) : Callback lors de la sélection</li>
-                        </ul>
+                    </ul>
                     </div>
                 </div>
             </div>
@@ -994,4 +1110,23 @@
             </ol>
         </x-card>
     </section>
+@endsection
+
+@section('scripts')
+<script type="module" src="/resources/js/theme-switcher.js"></script>
+<script>
+    document.querySelectorAll('.copy-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+            const codeId = btn.getAttribute('data-clipboard-target');
+            const codeBlock = document.querySelector(codeId);
+            if (codeBlock) {
+                const text = codeBlock.innerText;
+                navigator.clipboard.writeText(text).then(() => {
+                    btn.textContent = 'Copié !';
+                    setTimeout(() => btn.textContent = 'Copier', 1200);
+                });
+            }
+        });
+    });
+</script>
 @endsection

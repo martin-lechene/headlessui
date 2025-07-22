@@ -28,7 +28,7 @@
             @if($maxlength) maxlength="{{ $maxlength }}" @endif
             @if($minlength) minlength="{{ $minlength }}" @endif
             {{ $attributes->merge(['class' => 'block w-full px-3 py-2 border '.($error ? 'border-red-500' : 'border-gray-300').' rounded-sm shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50 text-sm']) }}
-        >{{ old($attributes->get('name'), $value) ?? $slot ?? '' }}</textarea>
+        >{{ is_array(old($attributes->get('name'), $value)) ? json_encode(old($attributes->get('name'), $value)) : (old($attributes->get('name'), $value) ?? (is_array($slot) ? json_encode($slot) : ($slot ?? ''))) }}</textarea>
         @if($clearable && !$disabled && !$readonly)
             <button type="button" class="absolute right-2 text-gray-400 hover:text-gray-600 focus:outline-none" onclick="this.previousElementSibling.value='';this.previousElementSibling.dispatchEvent(new Event('input'))">&times;</button>
         @elseif($suffix)

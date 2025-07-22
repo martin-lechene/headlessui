@@ -1,10 +1,21 @@
-<div class="mb-4">
-    <label class="block text-sm font-medium text-gray-700 mb-1">{{ $attributes->get('label') }}</label>
-    {{ $slot }}
-    @if($attributes->get('helpText'))
-        <p class="mt-1 text-xs text-gray-500">{{ $attributes->get('helpText') }}</p>
+@props([
+    'label' => null,
+    'help' => null,
+    'error' => null,
+    'required' => false,
+    'for' => null,
+])
+<div {{ $attributes->merge(['class' => 'mb-4']) }}>
+    @if($label)
+        <label @if($for) for="{{ $for }}" @endif class="block font-medium mb-1 {{ $required ? 'after:content-["*"] after:text-red-500 after:ml-1' : '' }}">{{ $label }}</label>
     @endif
-    @if($attributes->get('error'))
-        <p class="mt-1 text-xs text-red-600">{{ $attributes->get('error') }}</p>
+    <div>
+        {{ $slot }}
+    </div>
+    @if($help)
+        <div class="text-xs text-gray-500 mt-1">{{ $help }}</div>
+    @endif
+    @if($error)
+        <div class="text-xs text-red-500 mt-1">{{ $error }}</div>
     @endif
 </div> 
