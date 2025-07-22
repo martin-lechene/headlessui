@@ -11,12 +11,16 @@
     'optionLabel' => 'label',
     'optionValue' => 'value',
     'options' => [],
+    'taggable' => false,
 ])
 <div class="w-full">
     @if($label)
         <label class="block text-sm font-medium text-gray-700 mb-1">{{ $label }}</label>
     @endif
     <div class="relative">
+        @if($taggable)
+            <input type="text" class="mb-2 block w-full px-3 py-2 border border-gray-300 rounded-sm shadow-sm text-sm" placeholder="Ajouter un tag... (démo visuelle)" />
+        @endif
         <select
             @if($multiple) multiple @endif
             @if($disabled) disabled @endif
@@ -26,10 +30,23 @@
                 <option value="" disabled selected hidden>{{ $placeholder }}</option>
             @endif
             @foreach($options as $option)
-                <option value="{{ is_array($option) ? ($option[$optionValue] ?? $option['value'] ?? $option) : $option }}"
-                    @if($value == (is_array($option) ? ($option[$optionValue] ?? $option['value'] ?? $option) : $option)) selected @endif>
-                    {{ is_array($option) ? ($option[$optionLabel] ?? $option['label'] ?? $option) : $option }}
-                </option>
+                @if(is_array($option) && isset($option['options']))
+                    <optgroup label="{{ $option[$optionLabel] ?? $option['label'] ?? '' }}">
+                        @foreach($option['options'] as $subOption)
+                            <option value="{{ $subOption[$optionValue] ?? $subOption['value'] ?? $subOption }}"
+                                @if($value == ($subOption[$optionValue] ?? $subOption['value'] ?? $subOption)) selected @endif>
+                                @if(isset($subOption['icon'])) {!! $subOption['icon'] !!} @endif
+                                {{ $subOption[$optionLabel] ?? $subOption['label'] ?? $subOption }}
+                            </option>
+                        @endforeach
+                    </optgroup>
+                @else
+                    <option value="{{ is_array($option) ? ($option[$optionValue] ?? $option['value'] ?? $option) : $option }}"
+                        @if($value == (is_array($option) ? ($option[$optionValue] ?? $option['value'] ?? $option) : $option)) selected @endif>
+                        @if(is_array($option) && isset($option['icon'])) {!! $option['icon'] !!} @endif
+                        {{ is_array($option) ? ($option[$optionLabel] ?? $option['label'] ?? $option) : $option }}
+                    </option>
+                @endif
             @endforeach
             {{ $slot ?? '' }}
         </select>
