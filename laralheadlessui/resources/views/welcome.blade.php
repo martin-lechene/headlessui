@@ -8,7 +8,7 @@
             <div class="bg-white rounded-lg shadow border border-gray-100 p-6 flex flex-col md:flex-row md:items-start md:gap-8 transition hover:shadow-md">
                 <div class="flex-1 mb-4 md:mb-0">
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Button</h3>
-                    <div class="py-4 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                    <div class="py-8 px-6 bg-gray-50 rounded flex items-center justify-center min-h-[120px] max-w-full overflow-x-auto" style="min-width:0;">
                         <x-button color="primary" size="md" icon="<svg class='w-4 h-4' fill='none' stroke='currentColor' stroke-width='2' viewBox='0 0 24 24'><path stroke-linecap='round' stroke-linejoin='round' d='M5 13l4 4L19 7'></path></svg>">Valider</x-button>
                     </div>
                 </div>
@@ -36,7 +36,7 @@
             <div class="bg-white rounded-lg shadow border border-gray-100 p-6 flex flex-col md:flex-row md:items-start md:gap-8 transition hover:shadow-md">
                 <div class="flex-1 mb-4 md:mb-0">
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Input</h3>
-                    <div class="py-4 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                    <div class="py-8 px-6 bg-gray-50 rounded flex items-center justify-center min-h-[120px] max-w-full overflow-x-auto" style="min-width:0;">
                         <x-input label="Email" placeholder="Votre email" value="test@example.com" clearable helpText="Votre adresse email professionnelle" />
                     </div>
                 </div>
@@ -72,7 +72,7 @@
             <div class="bg-white rounded-lg shadow border border-gray-100 p-6 flex flex-col md:flex-row md:items-start md:gap-8 transition hover:shadow-md">
                 <div class="flex-1 mb-4 md:mb-0">
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Select</h3>
-                    <div class="py-4 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                    <div class="py-8 px-6 bg-gray-50 rounded flex items-center justify-center min-h-[120px] max-w-full overflow-x-auto" style="min-width:0;">
                         <x-select>
                             <option value="">Sélectionner une option</option>
                             <option value="option1">Option 1</option>
@@ -106,7 +106,7 @@
             <div class="bg-white rounded-lg shadow border border-gray-100 p-6 flex flex-col md:flex-row md:items-start md:gap-8 transition hover:shadow-md">
                 <div class="flex-1 mb-4 md:mb-0">
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Checkbox</h3>
-                    <div class="py-4 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                    <div class="py-8 px-6 bg-gray-50 rounded flex items-center justify-center min-h-[120px] max-w-full overflow-x-auto" style="min-width:0;">
                         <x-checkbox label="Accepter les conditions" checked />
                     </div>
                 </div>
@@ -131,7 +131,7 @@
             <div class="bg-white rounded-lg shadow border border-gray-100 p-6 flex flex-col md:flex-row md:items-start md:gap-8 transition hover:shadow-md">
                 <div class="flex-1 mb-4 md:mb-0">
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Radio</h3>
-                    <div class="py-4 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                    <div class="py-8 px-6 bg-gray-50 rounded flex items-center justify-center min-h-[120px] max-w-full overflow-x-auto" style="min-width:0;">
                         <x-radio name="radio-demo" label="Option 1" checked />
                     </div>
                 </div>
@@ -157,7 +157,7 @@
             <div class="bg-white rounded-lg shadow border border-gray-100 p-6 flex flex-col md:flex-row md:items-start md:gap-8 transition hover:shadow-md">
                 <div class="flex-1 mb-4 md:mb-0">
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Switch</h3>
-                    <div class="py-4 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                    <div class="py-8 px-6 bg-gray-50 rounded flex items-center justify-center min-h-[120px] max-w-full overflow-x-auto" style="min-width:0;">
                         <x-switch />
                     </div>
                 </div>
@@ -181,7 +181,7 @@
             <div class="bg-white rounded-lg shadow border border-gray-100 p-6 flex flex-col md:flex-row md:items-start md:gap-8 transition hover:shadow-md">
                 <div class="flex-1 mb-4 md:mb-0">
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Textarea</h3>
-                    <div class="py-4 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                    <div class="py-8 px-6 bg-gray-50 rounded flex items-center justify-center min-h-[120px] max-w-full overflow-x-auto" style="min-width:0;">
                         <x-textarea rows="2">Texte ici...</x-textarea>
                     </div>
                 </div>
@@ -205,7 +205,7 @@
             <div class="bg-white rounded-lg shadow border border-gray-100 p-6 flex flex-col md:flex-row md:items-start md:gap-8 transition hover:shadow-md">
                 <div class="flex-1 mb-4 md:mb-0">
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Badge</h3>
-                    <div class="py-4 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                    <div class="py-8 px-6 bg-gray-50 rounded flex items-center justify-center min-h-[120px] max-w-full overflow-x-auto" style="min-width:0;">
                         <x-badge>Badge</x-badge>
                     </div>
                 </div>
@@ -226,7 +226,7 @@
             <div class="bg-white rounded-lg shadow border border-gray-100 p-6 flex flex-col md:flex-row md:items-start md:gap-8 transition hover:shadow-md">
                 <div class="flex-1 mb-4 md:mb-0">
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Avatar</h3>
-                    <div class="py-4 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                    <div class="py-8 px-6 bg-gray-50 rounded flex items-center justify-center min-h-[120px] max-w-full overflow-x-auto" style="min-width:0;">
                         <x-avatar>JD</x-avatar>
                     </div>
                 </div>
@@ -246,7 +246,7 @@
             <div class="bg-white rounded-lg shadow border border-gray-100 p-6 flex flex-col md:flex-row md:items-start md:gap-8 transition hover:shadow-md">
                 <div class="flex-1 mb-4 md:mb-0">
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Breadcrumbs</h3>
-                    <div class="py-4 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                    <div class="py-8 px-6 bg-gray-50 rounded flex items-center justify-center min-h-[120px] max-w-full overflow-x-auto" style="min-width:0;">
                         <x-breadcrumbs><li>Accueil</li><li>Section</li><li>Page</li></x-breadcrumbs>
                     </div>
                 </div>
@@ -266,7 +266,7 @@
             <div class="bg-white rounded-lg shadow border border-gray-100 p-6 flex flex-col md:flex-row md:items-start md:gap-8 transition hover:shadow-md">
                 <div class="flex-1 mb-4 md:mb-0">
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Progress</h3>
-                    <div class="py-4 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                    <div class="py-8 px-6 bg-gray-50 rounded flex items-center justify-center min-h-[120px] max-w-full overflow-x-auto" style="min-width:0;">
                         <x-progress value="60" />
                     </div>
                 </div>
@@ -289,7 +289,7 @@
             <div class="bg-white rounded-lg shadow border border-gray-100 p-6 flex flex-col md:flex-row md:items-start md:gap-8 transition hover:shadow-md">
                 <div class="flex-1 mb-4 md:mb-0">
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Spinner</h3>
-                    <div class="py-4 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                    <div class="py-8 px-6 bg-gray-50 rounded flex items-center justify-center min-h-[120px] max-w-full overflow-x-auto" style="min-width:0;">
                         <x-spinner />
                     </div>
                 </div>
@@ -309,7 +309,7 @@
             <div class="bg-white rounded-lg shadow border border-gray-100 p-6 flex flex-col md:flex-row md:items-start md:gap-8 transition hover:shadow-md">
                 <div class="flex-1 mb-4 md:mb-0">
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Collapse</h3>
-                    <div class="py-4 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                    <div class="py-8 px-6 bg-gray-50 rounded flex items-center justify-center min-h-[120px] max-w-full overflow-x-auto" style="min-width:0;">
                         <x-collapse><div class="p-2">Contenu repliable</div></x-collapse>
                     </div>
                 </div>
@@ -331,7 +331,7 @@
             <div class="bg-white rounded-lg shadow border border-gray-100 p-6 flex flex-col md:flex-row md:items-start md:gap-8 transition hover:shadow-md">
                 <div class="flex-1 mb-4 md:mb-0">
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Pagination</h3>
-                    <div class="py-4 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                    <div class="py-8 px-6 bg-gray-50 rounded flex items-center justify-center min-h-[120px] max-w-full overflow-x-auto" style="min-width:0;">
                         <x-pagination><span>1</span><span class="font-bold">2</span><span>3</span></x-pagination>
                     </div>
                 </div>
@@ -363,7 +363,7 @@
             <div class="bg-white rounded-lg shadow border border-gray-100 p-6 flex flex-col md:flex-row md:items-start md:gap-8 transition hover:shadow-md">
                 <div class="flex-1 mb-4 md:mb-0">
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Tooltip</h3>
-                    <div class="py-4 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                    <div class="py-8 px-6 bg-gray-50 rounded flex items-center justify-center min-h-[120px] max-w-full overflow-x-auto" style="min-width:0;">
                         <x-tooltip content="Astuce !"><x-button>Survolez-moi</x-button></x-tooltip>
                     </div>
                 </div>
@@ -390,7 +390,7 @@
             <div class="bg-white rounded-lg shadow border border-gray-100 p-6 flex flex-col md:flex-row md:items-start md:gap-8 transition hover:shadow-md">
                 <div class="flex-1 mb-4 md:mb-0">
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Divider</h3>
-                    <div class="py-4 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                    <div class="py-8 px-6 bg-gray-50 rounded flex items-center justify-center min-h-[120px] max-w-full overflow-x-auto" style="min-width:0;">
                         <x-divider />
                     </div>
                 </div>
@@ -410,7 +410,7 @@
             <div class="bg-white rounded-lg shadow border border-gray-100 p-6 flex flex-col md:flex-row md:items-start md:gap-8 transition hover:shadow-md">
                 <div class="flex-1 mb-4 md:mb-0">
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Popover</h3>
-                    <div class="py-4 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                    <div class="py-8 px-6 bg-gray-50 rounded flex items-center justify-center min-h-[120px] max-w-full overflow-x-auto" style="min-width:0;">
                         <x-popover><x-button>Popover</x-button></x-popover>
                     </div>
                 </div>
@@ -437,7 +437,7 @@
             <div class="bg-white rounded-lg shadow border border-gray-100 p-6 flex flex-col md:flex-row md:items-start md:gap-8 transition hover:shadow-md">
                 <div class="flex-1 mb-4 md:mb-0">
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Dropdown</h3>
-                    <div class="py-4 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                    <div class="py-8 px-6 bg-gray-50 rounded flex items-center justify-center min-h-[120px] max-w-full overflow-x-auto" style="min-width:0;">
                         <x-dropdown><x-button>Dropdown</x-button></x-dropdown>
                     </div>
                 </div>
@@ -464,7 +464,7 @@
             <div class="bg-white rounded-lg shadow border border-gray-100 p-6 flex flex-col md:flex-row md:items-start md:gap-8 transition hover:shadow-md">
                 <div class="flex-1 mb-4 md:mb-0">
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Stepper</h3>
-                    <div class="py-4 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                    <div class="py-8 px-6 bg-gray-50 rounded flex items-center justify-center min-h-[120px] max-w-full overflow-x-auto" style="min-width:0;">
                         <x-stepper><span>Étape 1</span><span>Étape 2</span></x-stepper>
                     </div>
                 </div>
@@ -486,7 +486,7 @@
             <div class="bg-white rounded-lg shadow border border-gray-100 p-6 flex flex-col md:flex-row md:items-start md:gap-8 transition hover:shadow-md">
                 <div class="flex-1 mb-4 md:mb-0">
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Slider</h3>
-                    <div class="py-4 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                    <div class="py-8 px-6 bg-gray-50 rounded flex items-center justify-center min-h-[120px] max-w-full overflow-x-auto" style="min-width:0;">
                         <x-slider value="50" />
                     </div>
                 </div>
@@ -515,7 +515,7 @@
             <div class="bg-white rounded-lg shadow border border-gray-100 p-6 flex flex-col md:flex-row md:items-start md:gap-8 transition hover:shadow-md">
                 <div class="flex-1 mb-4 md:mb-0">
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Tag</h3>
-                    <div class="py-4 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                    <div class="py-8 px-6 bg-gray-50 rounded flex items-center justify-center min-h-[120px] max-w-full overflow-x-auto" style="min-width:0;">
                         <x-tag>Tag</x-tag>
                     </div>
                 </div>
@@ -536,7 +536,7 @@
             <div class="bg-white rounded-lg shadow border border-gray-100 p-6 flex flex-col md:flex-row md:items-start md:gap-8 transition hover:shadow-md">
                 <div class="flex-1 mb-4 md:mb-0">
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Timeline</h3>
-                    <div class="py-4 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                    <div class="py-8 px-6 bg-gray-50 rounded flex items-center justify-center min-h-[120px] max-w-full overflow-x-auto" style="min-width:0;">
                         <x-timeline><li>Début</li><li>Milieu</li><li>Fin</li></x-timeline>
                     </div>
                 </div>
@@ -558,7 +558,7 @@
             <div class="bg-white rounded-lg shadow border border-gray-100 p-6 flex flex-col md:flex-row md:items-start md:gap-8 transition hover:shadow-md">
                 <div class="flex-1 mb-4 md:mb-0">
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Statistic</h3>
-                    <div class="py-4 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                    <div class="py-8 px-6 bg-gray-50 rounded flex items-center justify-center min-h-[120px] max-w-full overflow-x-auto" style="min-width:0;">
                         <x-statistic value="42">Utilisateurs</x-statistic>
                     </div>
                 </div>
@@ -583,7 +583,7 @@
             <div class="bg-white rounded-lg shadow border border-gray-100 p-6 flex flex-col md:flex-row md:items-start md:gap-8 transition hover:shadow-md">
                 <div class="flex-1 mb-4 md:mb-0">
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Empty</h3>
-                    <div class="py-4 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                    <div class="py-8 px-6 bg-gray-50 rounded flex items-center justify-center min-h-[120px] max-w-full overflow-x-auto" style="min-width:0;">
                         <x-empty>Aucune donnée</x-empty>
                     </div>
                 </div>
@@ -603,7 +603,7 @@
             <div class="bg-white rounded-lg shadow border border-gray-100 p-6 flex flex-col md:flex-row md:items-start md:gap-8 transition hover:shadow-md">
                 <div class="flex-1 mb-4 md:mb-0">
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Form</h3>
-                    <div class="py-4 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                    <div class="py-8 px-6 bg-gray-50 rounded flex items-center justify-center min-h-[120px] max-w-full overflow-x-auto" style="min-width:0;">
                         <x-form>
                             <x-formcontrol label="Nom">
                                 <x-input />
@@ -630,7 +630,7 @@
             <div class="bg-white rounded-lg shadow border border-gray-100 p-6 flex flex-col md:flex-row md:items-start md:gap-8 transition hover:shadow-md">
                 <div class="flex-1 mb-4 md:mb-0">
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Drawer</h3>
-                    <div class="py-4 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                    <div class="py-8 px-6 bg-gray-50 rounded flex items-center justify-center min-h-[120px] max-w-full overflow-x-auto" style="min-width:0;">
                         <x-drawer><div>Contenu du drawer</div></x-drawer>
                     </div>
                 </div>
@@ -653,7 +653,7 @@
             <div class="bg-white rounded-lg shadow border border-gray-100 p-6 flex flex-col md:flex-row md:items-start md:gap-8 transition hover:shadow-md">
                 <div class="flex-1 mb-4 md:mb-0">
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Upload</h3>
-                    <div class="py-4 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                    <div class="py-8 px-6 bg-gray-50 rounded flex items-center justify-center min-h-[120px] max-w-full overflow-x-auto" style="min-width:0;">
                         <x-upload />
                     </div>
                 </div>
@@ -678,7 +678,7 @@
             <div class="bg-white rounded-lg shadow border border-gray-100 p-6 flex flex-col md:flex-row md:items-start md:gap-8 transition hover:shadow-md">
                 <div class="flex-1 mb-4 md:mb-0">
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Image</h3>
-                    <div class="py-4 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                    <div class="py-8 px-6 bg-gray-50 rounded flex items-center justify-center min-h-[120px] max-w-full overflow-x-auto" style="min-width:0;">
                         <x-image src="https://placehold.co/100x100" alt="Demo" />
                     </div>
                 </div>
@@ -703,7 +703,7 @@
             <div class="bg-white rounded-lg shadow border border-gray-100 p-6 flex flex-col md:flex-row md:items-start md:gap-8 transition hover:shadow-md">
                 <div class="flex-1 mb-4 md:mb-0">
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Affix</h3>
-                    <div class="py-4 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                    <div class="py-8 px-6 bg-gray-50 rounded flex items-center justify-center min-h-[120px] max-w-full overflow-x-auto" style="min-width:0;">
                         <x-affix><x-button>Affixé</x-button></x-affix>
                     </div>
                 </div>
@@ -725,7 +725,7 @@
             <div class="bg-white rounded-lg shadow border border-gray-100 p-6 flex flex-col md:flex-row md:items-start md:gap-8 transition hover:shadow-md">
                 <div class="flex-1 mb-4 md:mb-0">
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Anchor</h3>
-                    <div class="py-4 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                    <div class="py-8 px-6 bg-gray-50 rounded flex items-center justify-center min-h-[120px] max-w-full overflow-x-auto" style="min-width:0;">
                         <x-anchor href="#">Lien ancre</x-anchor>
                     </div>
                 </div>
@@ -749,7 +749,7 @@
             <div class="bg-white rounded-lg shadow border border-gray-100 p-6 flex flex-col md:flex-row md:items-start md:gap-8 transition hover:shadow-md">
                 <div class="flex-1 mb-4 md:mb-0">
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Descriptions</h3>
-                    <div class="py-4 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                    <div class="py-8 px-6 bg-gray-50 rounded flex items-center justify-center min-h-[120px] max-w-full overflow-x-auto" style="min-width:0;">
                         <x-descriptions>
                             <div>
                                 <dt>Nom</dt>
@@ -777,7 +777,7 @@
             <div class="bg-white rounded-lg shadow border border-gray-100 p-6 flex flex-col md:flex-row md:items-start md:gap-8 transition hover:shadow-md">
                 <div class="flex-1 mb-4 md:mb-0">
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Mentions</h3>
-                    <div class="py-4 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                    <div class="py-8 px-6 bg-gray-50 rounded flex items-center justify-center min-h-[120px] max-w-full overflow-x-auto" style="min-width:0;">
                         <x-mentions>@john</x-mentions>
                     </div>
                 </div>
@@ -805,7 +805,7 @@
             <div class="bg-white rounded-lg shadow border border-gray-100 p-6 flex flex-col md:flex-row md:items-start md:gap-8 transition hover:shadow-md">
                 <div class="flex-1 mb-4 md:mb-0">
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">FormControl</h3>
-                    <div class="py-4 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                    <div class="py-8 px-6 bg-gray-50 rounded flex items-center justify-center min-h-[120px] max-w-full overflow-x-auto" style="min-width:0;">
                         <x-formcontrol label="Bio">
                             <x-texteditor rows="2">Votre bio...</x-texteditor>
                         </x-formcontrol>
@@ -831,7 +831,7 @@
             <div class="bg-white rounded-lg shadow border border-gray-100 p-6 flex flex-col md:flex-row md:items-start md:gap-8 transition hover:shadow-md">
                 <div class="flex-1 mb-4 md:mb-0">
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">TextEditor</h3>
-                    <div class="py-4 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                    <div class="py-8 px-6 bg-gray-50 rounded flex items-center justify-center min-h-[120px] max-w-full overflow-x-auto" style="min-width:0;">
                         <x-texteditor rows="2">Votre bio...</x-texteditor>
                     </div>
                 </div>
@@ -855,7 +855,7 @@
             <div class="bg-white rounded-lg shadow border border-gray-100 p-6 flex flex-col md:flex-row md:items-start md:gap-8 transition hover:shadow-md">
                 <div class="flex-1 mb-4 md:mb-0">
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Sidebar</h3>
-                    <div class="py-4 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                    <div class="py-8 px-6 bg-gray-50 rounded flex items-center justify-center min-h-[120px] max-w-full overflow-x-auto" style="min-width:0;">
                         <x-sidebar><ul><li class="p-2">Menu 1</li></ul></x-sidebar>
                     </div>
                 </div>
@@ -878,7 +878,7 @@
             <div class="bg-white rounded-lg shadow border border-gray-100 p-6 flex flex-col md:flex-row md:items-start md:gap-8 transition hover:shadow-md">
                 <div class="flex-1 mb-4 md:mb-0">
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Autocomplete</h3>
-                    <div class="py-4 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                    <div class="py-8 px-6 bg-gray-50 rounded flex items-center justify-center min-h-[120px] max-w-full overflow-x-auto" style="min-width:0;">
                         <x-autocomplete placeholder="Chercher..." />
                     </div>
                 </div>
@@ -905,7 +905,7 @@
             <div class="bg-white rounded-lg shadow border border-gray-100 p-6 flex flex-col md:flex-row md:items-start md:gap-8 transition hover:shadow-md">
                 <div class="flex-1 mb-4 md:mb-0">
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Charts</h3>
-                    <div class="py-4 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                    <div class="py-8 px-6 bg-gray-50 rounded flex items-center justify-center min-h-[120px] max-w-full overflow-x-auto" style="min-width:0;">
                         <x-charts>Graphique ici</x-charts>
                     </div>
                 </div>
@@ -926,7 +926,7 @@
             <div class="bg-white rounded-lg shadow border border-gray-100 p-6 flex flex-col md:flex-row md:items-start md:gap-8 transition hover:shadow-md">
                 <div class="flex-1 mb-4 md:mb-0">
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Calendar</h3>
-                    <div class="py-4 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                    <div class="py-8 px-6 bg-gray-50 rounded flex items-center justify-center min-h-[120px] max-w-full overflow-x-auto" style="min-width:0;">
                         <x-calendar>Calendrier ici</x-calendar>
                     </div>
                 </div>
@@ -950,7 +950,7 @@
             <div class="bg-white rounded-lg shadow border border-gray-100 p-6 flex flex-col md:flex-row md:items-start md:gap-8 transition hover:shadow-md">
                 <div class="flex-1 mb-4 md:mb-0">
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Combobox</h3>
-                    <div class="py-4 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                    <div class="py-8 px-6 bg-gray-50 rounded flex items-center justify-center min-h-[120px] max-w-full overflow-x-auto" style="min-width:0;">
                         <x-combobox placeholder="Choisir..." />
                     </div>
                 </div>
