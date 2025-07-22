@@ -313,13 +313,31 @@
             <div class="bg-white rounded-lg shadow border border-gray-100 p-6 flex flex-col md:flex-row md:items-start md:gap-8 transition hover:shadow-md">
                 <div class="flex-1 mb-4 md:mb-0">
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Radio</h3>
-                    <div class="py-8 px-6 bg-gray-50 rounded flex items-center justify-center min-h-[120px] max-w-full overflow-x-auto" style="min-width:0;">
-                        <x-radio name="radio-demo" label="Option 1" checked />
+                    <div class="space-y-4">
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-radio name="radio-demo" label="Option cochée" checked />
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-radio name="radio-demo" label="Désactivé" disabled />
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-radio name="radio-demo" label="Lecture seule" readonly />
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-radio name="radio-demo" label="Erreur" error="Message d'erreur" />
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-radio name="radio-demo" label="Aide" helpText="Texte d'aide" />
+                        </div>
                     </div>
                 </div>
                 <div class="w-full md:w-1/2 mt-4 md:mt-0 flex flex-col gap-2">
                     <div class="bg-gray-900 text-gray-100 rounded p-4 text-xs font-mono overflow-x-auto mb-2">
-                        <pre class="whitespace-pre-wrap break-words"><code>&lt;x-radio name="radio-demo" label="Option 1" checked /&gt;</code></pre>
+                        <pre class="whitespace-pre-wrap break-words"><code>&lt;x-radio name="radio-demo" label="Option cochée" checked /&gt;
+&lt;x-radio name="radio-demo" label="Désactivé" disabled /&gt;
+&lt;x-radio name="radio-demo" label="Lecture seule" readonly /&gt;
+&lt;x-radio name="radio-demo" label="Erreur" error="Message d'erreur" /&gt;
+&lt;x-radio name="radio-demo" label="Aide" helpText="Texte d'aide" /&gt;</code></pre>
                     </div>
                     <div class="bg-gray-50 rounded p-3 text-xs">
                         <div class="font-semibold mb-1">Paramètres :</div>
@@ -339,13 +357,31 @@
             <div class="bg-white rounded-lg shadow border border-gray-100 p-6 flex flex-col md:flex-row md:items-start md:gap-8 transition hover:shadow-md">
                 <div class="flex-1 mb-4 md:mb-0">
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Switch</h3>
-                    <div class="py-8 px-6 bg-gray-50 rounded flex items-center justify-center min-h-[120px] max-w-full overflow-x-auto" style="min-width:0;">
-                        <x-switch />
+                    <div class="space-y-4">
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-switch checked />
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-switch disabled />
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-switch readonly />
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-switch error="Message d'erreur" />
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-switch helpText="Texte d'aide" />
+                        </div>
                     </div>
                 </div>
                 <div class="w-full md:w-1/2 mt-4 md:mt-0 flex flex-col gap-2">
                     <div class="bg-gray-900 text-gray-100 rounded p-4 text-xs font-mono overflow-x-auto mb-2">
-                        <pre class="whitespace-pre-wrap break-words"><code>&lt;x-switch /&gt;</code></pre>
+                        <pre class="whitespace-pre-wrap break-words"><code>&lt;x-switch checked /&gt;
+&lt;x-switch disabled /&gt;
+&lt;x-switch readonly /&gt;
+&lt;x-switch error="Message d'erreur" /&gt;
+&lt;x-switch helpText="Texte d'aide" /&gt;</code></pre>
                     </div>
                     <div class="bg-gray-50 rounded p-3 text-xs">
                         <div class="font-semibold mb-1">Paramètres :</div>
@@ -387,13 +423,31 @@
             <div class="bg-white rounded-lg shadow border border-gray-100 p-6 flex flex-col md:flex-row md:items-start md:gap-8 transition hover:shadow-md">
                 <div class="flex-1 mb-4 md:mb-0">
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Badge</h3>
-                    <div class="py-8 px-6 bg-gray-50 rounded flex items-center justify-center min-h-[120px] max-w-full overflow-x-auto" style="min-width:0;">
-                        <x-badge>Badge</x-badge>
+                    <div class="space-y-4">
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-badge>Badge</x-badge>
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-badge color="secondary">Secondaire</x-badge>
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-badge color="danger">Danger</x-badge>
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-badge size="sm">Petit</x-badge>
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-badge size="lg">Grand</x-badge>
+                        </div>
                     </div>
                 </div>
                 <div class="w-full md:w-1/2 mt-4 md:mt-0 flex flex-col gap-2">
                     <div class="bg-gray-900 text-gray-100 rounded p-4 text-xs font-mono overflow-x-auto mb-2">
-                        <pre class="whitespace-pre-wrap break-words"><code>&lt;x-badge&gt;Badge&lt;/x-badge&gt;</code></pre>
+                        <pre class="whitespace-pre-wrap break-words"><code>&lt;x-badge&gt;Badge&lt;/x-badge&gt;
+&lt;x-badge color="secondary"&gt;Secondaire&lt;/x-badge&gt;
+&lt;x-badge color="danger"&gt;Danger&lt;/x-badge&gt;
+&lt;x-badge size="sm"&gt;Petit&lt;/x-badge&gt;
+&lt;x-badge size="lg"&gt;Grand&lt;/x-badge&gt;</code></pre>
                     </div>
                     <div class="bg-gray-50 rounded p-3 text-xs">
                         <div class="font-semibold mb-1">Paramètres :</div>
