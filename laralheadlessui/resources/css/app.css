@@ -9,3 +9,106 @@
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
 }
+
+/* === THEMES VARIABLES === */
+[theme="light"] {
+  --background: #fff;
+  --surface: #f8fafc;
+  --text: #111827;
+  --muted: #6b7280;
+  --primary: #3b82f6;
+  --accent: #f59e42;
+  --border: #e5e7eb;
+}
+[theme="dark"] {
+  --background: #18181b;
+  --surface: #23232b;
+  --text: #f3f4f6;
+  --muted: #a1a1aa;
+  --primary: #60a5fa;
+  --accent: #fbbf24;
+  --border: #27272a;
+}
+[theme="pro"] {
+  --background: #f8fafc;
+  --surface: #fff;
+  --text: #1e293b;
+  --muted: #64748b;
+  --primary: #2563eb;
+  --accent: #fbbf24;
+  --border: #e0e7ef;
+}
+[theme="glass"] {
+  --background: rgba(255,255,255,0.6);
+  --surface: rgba(255,255,255,0.8);
+  --text: #374151;
+  --muted: #6b7280;
+  --primary: #a5b4fc;
+  --accent: #f472b6;
+  --border: #e0e7ef;
+  backdrop-filter: blur(8px);
+}
+[theme="forest"] {
+  --background: #f0fdf4;
+  --surface: #dcfce7;
+  --text: #14532d;
+  --muted: #4ade80;
+  --primary: #22c55e;
+  --accent: #a3e635;
+  --border: #bbf7d0;
+}
+[theme="sea"] {
+  --background: #e0f2fe;
+  --surface: #bae6fd;
+  --text: #0c4a6e;
+  --muted: #38bdf8;
+  --primary: #0ea5e9;
+  --accent: #38bdf8;
+  --border: #7dd3fc;
+}
+[theme="summer"] {
+  --background: #fff7ed;
+  --surface: #ffedd5;
+  --text: #78350f;
+  --muted: #fdba74;
+  --primary: #f59e42;
+  --accent: #fbbf24;
+  --border: #fed7aa;
+}
+[theme="2d"] {
+  --background: #f1f5f9;
+  --surface: #e2e8f0;
+  --text: #0f172a;
+  --muted: #64748b;
+  --primary: #f43f5e;
+  --accent: #a21caf;
+  --border: #cbd5e1;
+}
+
+html, body {
+  background: var(--background);
+  color: var(--text);
+  transition: background 0.3s, color 0.3s;
+}
+
+/* === TAILWIND CLASS OVERRIDES === */
+.bg-white, .bg-gray-50, .bg-surface { background: var(--surface) !important; }
+.bg-gray-100 { background: var(--background) !important; }
+.text-gray-900, .text-gray-800, .text-black { color: var(--text) !important; }
+.text-gray-500, .text-gray-400, .text-muted { color: var(--muted) !important; }
+.border-gray-100, .border-gray-200, .border { border-color: var(--border) !important; }
+.bg-primary { background: var(--primary) !important; }
+.text-primary { color: var(--primary) !important; }
+.bg-accent { background: var(--accent) !important; }
+.text-accent { color: var(--accent) !important; }
+
+/* === BUTTONS, CARDS, ETC. === */
+.button, .btn, .card, .surface {
+  background: var(--surface);
+  color: var(--text);
+  border-color: var(--border);
+}
+
+/* === SCROLLBAR, SELECTION, ETC. === */
+::selection { background: var(--primary); color: #fff; }
+::-webkit-scrollbar-thumb { background: var(--primary); }

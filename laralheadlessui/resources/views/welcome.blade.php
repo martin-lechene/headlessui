@@ -188,17 +188,89 @@
             <div class="bg-white rounded-lg shadow border border-gray-100 p-6 flex flex-col md:flex-row md:items-start md:gap-8 transition hover:shadow-md">
                 <div class="flex-1 mb-4 md:mb-0">
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Select</h3>
-                    <div class="py-8 px-6 bg-gray-50 rounded flex items-center justify-center min-h-[120px] max-w-full overflow-x-auto" style="min-width:0;">
-                        <x-select>
-                            <option value="">Sélectionner une option</option>
-                            <option value="option1">Option 1</option>
-                            <option value="option2">Option 2</option>
-                        </x-select>
+                    <div class="space-y-4">
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-select>
+                                <option value="">Sélectionner une option</option>
+                                <option value="option1">Option 1</option>
+                                <option value="option2">Option 2</option>
+                            </x-select>
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-select label="Pays">
+                                <option value="fr">France</option>
+                                <option value="be">Belgique</option>
+                            </x-select>
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-select label="Erreur" error="Champ requis">
+                                <option value="">Choisir</option>
+                            </x-select>
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-select label="Aide" helpText="Sélectionnez une valeur">
+                                <option value="1">Un</option>
+                                <option value="2">Deux</option>
+                            </x-select>
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-select label="Désactivé" disabled>
+                                <option>Option</option>
+                            </x-select>
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-select label="Lecture seule" readonly>
+                                <option>Option</option>
+                            </x-select>
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-select label="Multiple" multiple>
+                                <option>Un</option>
+                                <option>Deux</option>
+                                <option>Trois</option>
+                            </x-select>
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-select label="Clearable" clearable>
+                                <option>Un</option>
+                                <option>Deux</option>
+                            </x-select>
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-select label="Autofocus" autofocus>
+                                <option>Un</option>
+                                <option>Deux</option>
+                            </x-select>
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-select label="Maxlength" maxlength="2">
+                                <option>Un</option>
+                                <option>Deux</option>
+                                <option>Trois</option>
+                            </x-select>
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-select label="Minlength" minlength="2">
+                                <option>Un</option>
+                                <option>Deux</option>
+                                <option>Trois</option>
+                            </x-select>
+                        </div>
                     </div>
                 </div>
                 <div class="w-full md:w-1/2 mt-4 md:mt-0 flex flex-col gap-2">
                     <div class="bg-gray-900 text-gray-100 rounded p-4 text-xs font-mono overflow-x-auto mb-2">
-                        <pre class="whitespace-pre-wrap break-words"><code>&lt;x-select&gt;<br>&lt;option value=""&gt;Sélectionner une option&lt;/option&gt;<br>&lt;option value="option1"&gt;Option 1&lt;/option&gt;<br>&lt;option value="option2"&gt;Option 2&lt;/option&gt;<br>&lt;/x-select&gt;</code></pre>
+                        <pre class="whitespace-pre-wrap break-words"><code>&lt;x-select&gt;...&lt;/x-select&gt;
+&lt;x-select label=&quot;Pays&quot;&gt;...&lt;/x-select&gt;
+&lt;x-select label=&quot;Erreur&quot; error=&quot;Champ requis&quot;&gt;...&lt;/x-select&gt;
+&lt;x-select label=&quot;Aide&quot; helpText=&quot;Sélectionnez une valeur&quot;&gt;...&lt;/x-select&gt;
+&lt;x-select label=&quot;Désactivé&quot; disabled&gt;...&lt;/x-select&gt;
+&lt;x-select label=&quot;Lecture seule&quot; readonly&gt;...&lt;/x-select&gt;
+&lt;x-select label=&quot;Multiple&quot; multiple&gt;...&lt;/x-select&gt;
+&lt;x-select label=&quot;Clearable&quot; clearable&gt;...&lt;/x-select&gt;
+&lt;x-select label=&quot;Autofocus&quot; autofocus&gt;...&lt;/x-select&gt;
+&lt;x-select label=&quot;Maxlength&quot; maxlength=&quot;2&quot;&gt;...&lt;/x-select&gt;
+&lt;x-select label=&quot;Minlength&quot; minlength=&quot;2&quot;&gt;...&lt;/x-select&gt;</code></pre>
                     </div>
                     <div class="bg-gray-50 rounded p-3 text-xs">
                         <div class="font-semibold mb-1">Paramètres :</div>
