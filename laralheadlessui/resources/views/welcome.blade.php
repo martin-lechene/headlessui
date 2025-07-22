@@ -559,13 +559,23 @@
             <div class="bg-white rounded-lg shadow border border-gray-100 p-6 flex flex-col md:flex-row md:items-start md:gap-8 transition hover:shadow-md">
                 <div class="flex-1 mb-4 md:mb-0">
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Spinner</h3>
-                    <div class="py-8 px-6 bg-gray-50 rounded flex items-center justify-center min-h-[120px] max-w-full overflow-x-auto" style="min-width:0;">
-                        <x-spinner />
+                    <div class="space-y-4">
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-spinner />
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-spinner size="sm" />
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-spinner size="lg" />
+                        </div>
                     </div>
                 </div>
                 <div class="w-full md:w-1/2 mt-4 md:mt-0 flex flex-col gap-2">
                     <div class="bg-gray-900 text-gray-100 rounded p-4 text-xs font-mono overflow-x-auto mb-2">
-                        <pre class="whitespace-pre-wrap break-words"><code>&lt;x-spinner /&gt;</code></pre>
+                        <pre class="whitespace-pre-wrap break-words"><code>&lt;x-spinner /&gt;
+&lt;x-spinner size="sm" /&gt;
+&lt;x-spinner size="lg" /&gt;</code></pre>
                     </div>
                     <div class="bg-gray-50 rounded p-3 text-xs">
                         <div class="font-semibold mb-1">Paramètres :</div>
@@ -579,13 +589,27 @@
             <div class="bg-white rounded-lg shadow border border-gray-100 p-6 flex flex-col md:flex-row md:items-start md:gap-8 transition hover:shadow-md">
                 <div class="flex-1 mb-4 md:mb-0">
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Collapse</h3>
-                    <div class="py-8 px-6 bg-gray-50 rounded flex items-center justify-center min-h-[120px] max-w-full overflow-x-auto" style="min-width:0;">
-                        <x-collapse><div class="p-2">Contenu repliable</div></x-collapse>
+                    <div class="space-y-4">
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-collapse><div class="p-2">Contenu repliable</div></x-collapse>
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-collapse open><div class="p-2">Ouvert</div></x-collapse>
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-collapse alwaysOpen><div class="p-2">Toujours ouvert</div></x-collapse>
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-collapse transition="height 0.5s"><div class="p-2">Transition personnalisée</div></x-collapse>
+                        </div>
                     </div>
                 </div>
                 <div class="w-full md:w-1/2 mt-4 md:mt-0 flex flex-col gap-2">
                     <div class="bg-gray-900 text-gray-100 rounded p-4 text-xs font-mono overflow-x-auto mb-2">
-                        <pre class="whitespace-pre-wrap break-words"><code>&lt;x-collapse&gt;&lt;div class="p-2"&gt;Contenu repliable&lt;/div&gt;&lt;/x-collapse&gt;</code></pre>
+                        <pre class="whitespace-pre-wrap break-words"><code>&lt;x-collapse&gt;&lt;div class="p-2"&gt;Contenu repliable&lt;/div&gt;&lt;/x-collapse&gt;
+&lt;x-collapse open&gt;&lt;div class="p-2"&gt;Ouvert&lt;/div&gt;&lt;/x-collapse&gt;
+&lt;x-collapse alwaysOpen&gt;&lt;div class="p-2"&gt;Toujours ouvert&lt;/div&gt;&lt;/x-collapse&gt;
+&lt;x-collapse transition="height 0.5s"&gt;&lt;div class="p-2"&gt;Transition personnalisée&lt;/div&gt;&lt;/x-collapse&gt;</code></pre>
                     </div>
                     <div class="bg-gray-50 rounded p-3 text-xs">
                         <div class="font-semibold mb-1">Paramètres :</div>
@@ -601,13 +625,39 @@
             <div class="bg-white rounded-lg shadow border border-gray-100 p-6 flex flex-col md:flex-row md:items-start md:gap-8 transition hover:shadow-md">
                 <div class="flex-1 mb-4 md:mb-0">
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Pagination</h3>
-                    <div class="py-8 px-6 bg-gray-50 rounded flex items-center justify-center min-h-[120px] max-w-full overflow-x-auto" style="min-width:0;">
-                        <x-pagination><span>1</span><span class="font-bold">2</span><span>3</span></x-pagination>
+                    <div class="space-y-4">
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-pagination total="100" perPage="10" currentPage="2" />
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-pagination showNumbers="false" />
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-pagination showFirstLast="false" />
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-pagination showPrevNext="false" />
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-pagination showEllipsis="false" />
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-pagination ellipsis="..." />
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-pagination prevText="Précédent" nextText="Suivant" firstText="Début" lastText="Fin" />
+                        </div>
                     </div>
                 </div>
                 <div class="w-full md:w-1/2 mt-4 md:mt-0 flex flex-col gap-2">
                     <div class="bg-gray-900 text-gray-100 rounded p-4 text-xs font-mono overflow-x-auto mb-2">
-                        <pre class="whitespace-pre-wrap break-words"><code>&lt;x-pagination&gt;&lt;span&gt;1&lt;/span&gt;&lt;span class="font-bold"&gt;2&lt;/span&gt;&lt;span&gt;3&lt;/span&gt;&lt;/x-pagination&gt;</code></pre>
+                        <pre class="whitespace-pre-wrap break-words"><code>&lt;x-pagination total="100" perPage="10" currentPage="2" /&gt;
+&lt;x-pagination showNumbers="false" /&gt;
+&lt;x-pagination showFirstLast="false" /&gt;
+&lt;x-pagination showPrevNext="false" /&gt;
+&lt;x-pagination showEllipsis="false" /&gt;
+&lt;x-pagination ellipsis="..." /&gt;
+&lt;x-pagination prevText="Précédent" nextText="Suivant" firstText="Début" lastText="Fin" /&gt;</code></pre>
                     </div>
                     <div class="bg-gray-50 rounded p-3 text-xs">
                         <div class="font-semibold mb-1">Paramètres :</div>
