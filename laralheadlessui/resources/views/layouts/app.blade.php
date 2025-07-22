@@ -20,6 +20,20 @@
             <a href="#install" class="hover:text-blue-600">Installation</a>
             <a href="https://github.com/martin-lechene/" target="_blank" class="hover:text-blue-600">Github</a>
         </nav>
+        <div class="flex items-center gap-2 bg-blue-50 border border-blue-200 rounded-lg px-3 py-1 shadow-sm ml-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m8.66-13.66l-.71.71M4.05 19.07l-.71.71M21 12h-1M4 12H3m16.66 5.66l-.71-.71M4.05 4.93l-.71-.71M16 12a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
+            <label for="theme-select" class="sr-only">Thème</label>
+            <select id="theme-select" class="border-none bg-transparent focus:ring-2 focus:ring-blue-400 rounded px-2 py-1 text-sm font-medium text-blue-700 hover:bg-blue-100 transition">
+                <option value="pro">Pro (FrappeUI)</option>
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+                <option value="glass">Glass</option>
+                <option value="forest">Forest</option>
+                <option value="sea">Sea</option>
+                <option value="summer">Summer</option>
+                <option value="2d">2D</option>
+            </select>
+        </div>
         <style>
             [theme="pro"] { --tw-bg-opacity: 1; background-color: #f8fafc; color: #1e293b; }
             [theme="light"] { background-color: #fff; color: #111827; }
@@ -31,19 +45,6 @@
             [theme="2d"] { background-color: #f1f5f9; color: #0f172a; }
             html[theme] { transition: background 0.3s, color 0.3s; }
         </style>
-        <div class="flex justify-end mb-4">
-            <label for="theme-select" class="mr-2 font-semibold text-gray-700">Thème :</label>
-            <select id="theme-select" class="border rounded px-2 py-1">
-                <option value="pro">Pro (FrappeUI)</option>
-                <option value="light">Light</option>
-                <option value="dark">Dark</option>
-                <option value="glass">Glass</option>
-                <option value="forest">Forest</option>
-                <option value="sea">Sea</option>
-                <option value="summer">Summer</option>
-                <option value="2d">2D</option>
-            </select>
-        </div>
     </header>
     <!-- Hero -->
     <section class="bg-blue-50 py-12 px-4 text-center border-b border-blue-100">
