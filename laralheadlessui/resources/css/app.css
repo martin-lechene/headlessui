@@ -1502,3 +1502,68 @@ html, body {
 .via-orange-500 { --tw-gradient-stops: var(--color-orange-500), var(--color-orange-500), var(--color-orange-500) !important; }
 .shadow-orange-500 { box-shadow: 0 1px 2px 0 var(--color-orange-500) !important; }
 /* Répéter pour pink, purple, indigo, teal, cyan, lime, amber, emerald, fuchsia, violet, sky, slate, stone, neutral, zinc, etc. */
+
+/* SQUELETTE EXHAUSTIF OVERRIDE TAILWIND THEME */
+
+/* Pour chaque couleur et chaque shade, pour chaque utilitaire Tailwind */
+/* Exemple pour blue, à dupliquer pour chaque couleur */
+.text-blue-50 { color: var(--color-blue-50) !important; }
+.bg-blue-50 { background: var(--color-blue-50) !important; }
+.border-blue-50 { border-color: var(--color-blue-50) !important; }
+.ring-blue-50 { --tw-ring-color: var(--color-blue-50) !important; }
+.outline-blue-50 { outline-color: var(--color-blue-50) !important; }
+.placeholder-blue-50::placeholder { color: var(--color-blue-50) !important; }
+.divide-blue-50 > :not([hidden]) ~ :not([hidden]) { border-color: var(--color-blue-50) !important; }
+.from-blue-50 { --tw-gradient-from: var(--color-blue-50) !important; }
+.to-blue-50 { --tw-gradient-to: var(--color-blue-50) !important; }
+.via-blue-50 { --tw-gradient-stops: var(--color-blue-50), var(--color-blue-50), var(--color-blue-50) !important; }
+.shadow-blue-50 { box-shadow: 0 1px 2px 0 var(--color-blue-50) !important; }
+.accent-blue-50 { accent-color: var(--color-blue-50) !important; }
+.caret-blue-50 { caret-color: var(--color-blue-50) !important; }
+.selection-blue-50::selection { background: var(--color-blue-50) !important; }
+.decoration-blue-50 { text-decoration-color: var(--color-blue-50) !important; }
+.underline-blue-50 { text-decoration-color: var(--color-blue-50) !important; }
+.overline-blue-50 { text-decoration-color: var(--color-blue-50) !important; }
+.line-through-blue-50 { text-decoration-color: var(--color-blue-50) !important; }
+.fill-blue-50 { fill: var(--color-blue-50) !important; }
+.stroke-blue-50 { stroke: var(--color-blue-50) !important; }
+/* Répéter pour chaque shade (100 à 900) et chaque couleur */
+
+/* Variantes d'états */
+.hover\:bg-blue-500:hover { background: var(--color-blue-500) !important; }
+.focus\:bg-blue-500:focus { background: var(--color-blue-500) !important; }
+.active\:bg-blue-500:active { background: var(--color-blue-500) !important; }
+.disabled\:bg-blue-500:disabled { background: var(--color-blue-500) !important; }
+/* Répéter pour tous les utilitaires et toutes les couleurs */
+
+/* Classes fixes */
+.text-black { color: var(--color-black) !important; }
+.text-white { color: var(--color-white) !important; }
+.bg-black { background: var(--color-black) !important; }
+.bg-white { background: var(--color-white) !important; }
+.border-black { border-color: var(--color-black) !important; }
+.border-white { border-color: var(--color-white) !important; }
+.text-transparent { color: var(--color-transparent) !important; }
+.bg-transparent { background: var(--color-transparent) !important; }
+
+/* Répéter ce squelette pour chaque couleur officielle Tailwind :
+   blue, red, green, yellow, orange, pink, purple, indigo, teal, cyan, lime, amber, emerald, fuchsia, violet, sky, slate, stone, neutral, zinc, black, white, transparent */
+
+/* Variables CSS à définir dans chaque thème pour chaque couleur et shade */
+[theme="light"] {
+  --color-blue-50: #eff6ff;
+  --color-blue-100: #dbeafe;
+  /* ... toutes les variables pour chaque couleur et shade ... */
+  --color-black: #000;
+  --color-white: #fff;
+  --color-transparent: transparent;
+}
+[theme="dark"] {
+  --color-blue-50: #1e293b;
+  --color-blue-100: #1e293b;
+  /* ... toutes les variables pour chaque couleur et shade ... */
+  --color-black: #fff;
+  --color-white: #18181b;
+  --color-transparent: transparent;
+}
+/* Répéter pour chaque couleur et chaque shade, pour chaque thème */
